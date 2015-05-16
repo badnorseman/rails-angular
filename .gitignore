@@ -14,7 +14,7 @@ Gemfile.lock
 app/assets/images
 
 # Ignore lib files.
-/lib
+# /lib
 
 # Ignore log files.
 *.log
