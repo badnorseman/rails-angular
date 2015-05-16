@@ -1,0 +1,65 @@
+#loginPage {
+  background-color:$white;
+  color:$grey;
+  min-width:320;
+  width:320px;
+  margin:0;
+  padding:0;
+}
+
+#loginEmail {
+  display:block;
+  margin:0 auto;
+  padding:10;
+  width:90%;
+}
+
+#loginPassword {
+  display:block;
+  margin:0 auto;
+  padding:10;
+  width:90%;
+}
+
+#loginPasswordForgot {
+  border:none;
+  color:$grey;
+  cursor:pointer;
+  display:block;
+  height:2em;
+  margin:0 auto;
+  text-align:right;
+  text-decoration:none;
+  width:90%;
+}
+
+#loginPasswordForgot:hover {
+  cursor:pointer;
+  text-decoration:none;
+}
+
+#loginButtonFacebook {
+  background-color:$facebook;
+  border:none;
+  color:$white;
+  display:block;
+  height:3em;
+  margin:0 auto;
+  width:90%;
+}
+
+#loginButtonFacebookIcon {
+  position:relative;
+  font-family:FontAwesome;
+  content:"\f09a";
+}
+
+#loginButtonSubmit {
+  background-color:$well_done_green;
+  border:none;
+  color:$white;
+  display:block;
+  height:3em;
+  margin:0 auto;
+  width:90%;
+}

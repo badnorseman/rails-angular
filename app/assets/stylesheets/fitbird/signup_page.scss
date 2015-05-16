@@ -1,0 +1,79 @@
+#signupPage {
+  background-color:$white;
+  color:$grey;
+  min-width:320;
+  width:320px;
+  margin:0;
+  padding:0;
+}
+
+#signupPageFirstName {
+  display:block;
+  margin:0 auto;
+  padding:10;
+  width:90%;
+}
+
+#signupPageLastName {
+  display:block;
+  margin:0 auto;
+  padding:10;
+  width:90%;
+}
+
+#signupPageEmail {
+  display:block;
+  margin:0 auto;
+  padding:10;
+  width:90%;
+}
+
+#signupPagePassword {
+  display:block;
+  margin:0 auto;
+  padding:10;
+  width:90%;
+}
+
+#signupPagePasswordConfirmation {
+  display:block;
+  margin:0 auto;
+  padding:10;
+  width:90%;
+}
+
+#signupPageButtonFacebook {
+  background-color:$facebook;
+  border:none;
+  color:$white;
+  display:block;
+  height:3em;
+  margin:0 auto;
+  width:90%;
+}
+
+#signupPageButtonFacebookIcon {
+  position:relative;
+  font-family:FontAwesome;
+  content:"\f09a";
+}
+
+#signupPageButtonSubmit {
+  background-color:$well_done_green;
+  border:none;
+  color:$white;
+  display:block;
+  height:3em;
+  margin:0 auto;
+  width:90%;
+}
+
+#reset-password-header {
+  color:$grey-dark;
+  text-align:center;
+}
+
+#reset-password-text {
+  color:$grey-dark;
+  margin-left:15px;
+}

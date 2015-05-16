@@ -1,0 +1,9 @@
+module.config(['$stateProvider',
+  function($stateProvider) {
+    $stateProvider
+      .state('dashboard', {
+        url: '/dashboard',
+        templateUrl: '<%= asset_path("dashboards/dashboard.html") %>',
+        controller: 'DashboardCtrl'
+      })
+}]);

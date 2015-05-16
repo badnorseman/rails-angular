@@ -1,0 +1,17 @@
+<h2></h2>
+<form ng-init="habitForm = {}" novalidate role="form">
+  <label for="habitName">Name</label>
+  <input autofocus id="habitName" ng-maxlength="50" ng-model="habit.name" required type="text">
+  <br>
+  <label for="habitSummary">Summary</label>
+  <input id="habitSummary" ng-maxlength="100" ng-model="habit.summary" required type="text">
+  <br>
+  <label for="habitDescription">Description</label>
+  <input id="habitDescription" ng-model="habit.description" required type="text">
+  <br>
+  <button ng-click="save()" ng-disabled="habitForm.$invalid">Save</button>
+  <span></span>
+  <button ng-click="delete()">Delete</button>
+  <span></span>
+  <button ui-sref="habits">Close</button>
+</form>

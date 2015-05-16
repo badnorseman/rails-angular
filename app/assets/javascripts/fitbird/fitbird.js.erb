@@ -1,0 +1,20 @@
+var module = angular.module('fitbird', [
+  'ipCookie',
+  'ngMessages',
+  'ngResource',
+  'ng-token-auth',
+  'ui.bootstrap',
+  'ui.router'
+]);
+
+module.config(['$urlRouterProvider',
+  function($urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
+}]);
+
+module.config(['$authProvider',
+  function($authProvider) {
+    $authProvider.configure({
+      passwordResetSuccessUrl: 'http://localhost:3000/#/password_update'
+    });
+}]);

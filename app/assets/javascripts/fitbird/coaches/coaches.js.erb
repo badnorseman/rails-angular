@@ -1,0 +1,14 @@
+module.config(['$stateProvider',
+  function($stateProvider) {
+    $stateProvider
+      .state('coaches', {
+        url: '/coaches',
+        templateUrl: '<%= asset_path("coaches/list.html") %>',
+        controller: 'CoachListCtrl'
+      })
+      .state('schedule', {
+        url: '/coaches/:coachId/schedule',
+        templateUrl: '<%= asset_path("schedules/coach_schedule.html") %>',
+        controller: 'ScheduleCtrl'
+      });
+}]);

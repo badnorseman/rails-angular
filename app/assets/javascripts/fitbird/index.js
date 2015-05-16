@@ -1,0 +1,16 @@
+//= require fitbird/fitbird
+//= require fitbird/authentications
+//= require fitbird/bookings
+//= require fitbird/coaches
+//= require fitbird/dashboards
+//= require fitbird/exercise_descriptions
+//= require fitbird/exercise_plans
+//= require fitbird/habits
+//= require fitbird/menus
+//= require fitbird/profiles
+//= require fitbird/payment_plans
+//= require fitbird/products
+//= require fitbird/registrations
+//= require fitbird/schedules
+//= require fitbird/users
+//= require fitbird/welcome

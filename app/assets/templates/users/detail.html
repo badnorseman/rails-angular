@@ -1,0 +1,27 @@
+<div>
+  <form ng-init="userForm = {}" novalidate role="form">
+    <label for="userFirstName">First Name</label>
+    <input id="userFirstName" ng-model="user.first_name" required type="text">
+    <span></span>
+    <label for="userLastName">Last Name</label>
+    <input id="userLastName" ng-model="user.last_name" required type="text">
+    <br>
+    <label for="userGender">Gender</label>
+    <input id="userGender" ng-model="user.gender" type="text">
+    <span class="fa fa-male"></span>
+    <span class="fa fa-female"></span>
+    <br>
+    <label for="userBirthDay">Date of Birth (dd/mm/yyyy)</label>
+    <input id="userBirthDay" ng-model="user.birth_date" type="text">
+    <br>
+    <label for="userHeight">Height</label>
+    <input id="userHeight" ng-model="user.height" type="text">
+    <span></span>
+    <label for="userWeight">Weight</label>
+    <input id="userWeight" ng-model="user.weight" type="text">
+    <br>
+    <button ng-click="update()" ng-disabled="userForm.$invalid">Save</button>
+    <span></span>
+    <button ui-sref="dashboard">Close</button>
+  </form>
+</div>

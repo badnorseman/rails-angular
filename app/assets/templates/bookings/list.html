@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-xs-12 col-lg-4 bookingList">
+    <h2>Bookings</h2>
+    <br>
+    <table>
+      <tr ng-repeat="booking in bookings">
+        <td>
+          {{ booking.user_name }},
+          {{ booking.start_at | date: "EEE MM-dd-yy" }}
+          <span class="badge" ng-bind="booking.confirmed_at == null? 'Waiting' : 'Approved' "></span>
+        </td>
+        <td>
+          {{ booking.start_at | date: "hh:mm a" }} -
+          {{ booking.end_at   | date: "hh:mm a" }}
+        </td>
+        <td>
+          <div class="actions" ng-show="dateInFuture(booking.start_at)">
+            <a href="" ng-click="confirmBooking(booking)" ng-show="userCanConfirmBooking(booking)">Confirm</a>
+            <a href="" ng-click="cancelBooking(booking)">Cancel</a>
+            <a href="" ng-click="rescheduleBooking(booking)" ng-show="userCanRescheduleBooking(booking)">Reschedule</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <button href="javascript:void(0)" ui-sref="dashboard">Close</button>
+  </div>
+  <div class="col-xs-12 col-lg-9">
+    <div ui-view></div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<h2></h2>
+<form ng-init="exerciseDescriptionForm = {}" novalidate role="form">
+  <label for="exerciseDescriptionName">Name</label>
+  <input autofocus id="exerciseDescriptionName" ng-maxlength="50" ng-model="exerciseDescription.name" required type="text">
+  <br>
+  <label for="exerciseDescriptionShortName">Name for Mobile</label>
+  <input id="exerciseDescriptionShortName" ng-maxlength="100" ng-model="exerciseDescription.short_name_for_mobile" required type="text">
+  <br>
+  <label for="exerciseDescriptionDescription">Description</label>
+  <input id="exerciseDescriptionDescription" ng-maxlength="255" ng-model="exerciseDescription.description" required type="text">
+  <br>
+  <label for="exerciseDescriptionUrl">Video Url</label>
+  <input id="exerciseDescriptionUrl" ng-maxlength="100" ng-model="exerciseDescription.video_url" type="url">
+  <br>
+  <label for="exerciseDescriptionDistance">Distance</label>
+  <input id="exerciseDescriptionDistance" ng-model="exerciseDescription.distance" type="checkbox">
+  <br>
+  <label for="exerciseDescriptionDuration">Duration</label>
+  <input id="exerciseDescriptionDuration" ng-model="exerciseDescription.duration" type="checkbox">
+  <br>
+  <label for="exerciseDescriptionLoad">Load</label>
+  <input id="exerciseDescriptionLoad" ng-model="exerciseDescription.load" type="checkbox">
+  <span></span>
+  <label for="exerciseDescriptionLoadUnilateral">Unilateral Load</label>
+  <input id="exerciseDescriptionLoadUnilateral" ng-model="exerciseDescription.unilateral_loading" type="checkbox">
+  <br>
+  <label for="exerciseDescriptionRepetition">Repetition</label>
+  <input id="exerciseDescriptionRepetition" ng-model="exerciseDescription.repetition" type="checkbox">
+  <span></span>
+  <label for="exerciseDescriptionRepetitionUnilateral">Unilateral Repetition</label>
+  <input id="exerciseDescriptionRepetitionUnilateral" ng-model="exerciseDescription.unilateral_execution" type="checkbox">
+  <br>
+  <label for="exerciseDescriptionTempo">Tempo</label>
+  <input id="exerciseDescriptionTempo" ng-maxlength="8" ng-model="exerciseDescription.tempo" type="text">
+  <br>
+  <button ng-click="save()" ng-disabled="exerciseDescriptionForm.$invalid">Save</button>
+  <span></span>
+  <button ng-click="delete()">Delete</button>
+  <span></span>
+  <button ui-sref="exerciseDescriptions">Close</button>
+</form>

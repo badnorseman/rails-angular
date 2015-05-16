@@ -1,0 +1,29 @@
+<h2></h2>
+<form ng-init="paymentPlanForm = {}" novalidate role="form">
+  <label for="paymentPlanName">Name</label>
+  <input autofocus id="paymentPlanName" ng-maxlength="50" ng-model="paymentPlan.name" required type="text">
+  <br>
+  <label for="paymentPlanDescription">Description</label>
+  <input id="paymentPlanDescription" ng-model="paymentPlan.description" required type="text">
+  <br>
+  <label for="paymentPlanPrice">Price</label>
+  <input id="paymentPlanPrice" ng-model="paymentPlan.price" required type="text">
+  <br>
+  <label for="paymentPlanCurrencyIsoCode">Currency</label>
+  <input id="paymentPlanCurrencyIsoCode" ng-model="paymentPlan.currency_iso_code" required type="text">
+  <br>
+  <label for="paymentPlanBillingDayOfMonth">Billing Day of Month</label>
+  <input id="paymentPlanBillingDayOfMonth" ng-model="paymentPlan.billing_day_of_month" required type="text">
+  <br>
+  <label for="paymentPlanNumberOfBillingCycles">Number of Billing Cycles</label>
+  <input id="paymentPlanNumberOfBillingCycles" ng-model="paymentPlan.number_of_billing_cycles" required type="text">
+  <br>
+  <label for="paymentPlanBillingFrequency">Billing Frequency</label>
+  <input id="paymentPlanBillingFrequency" ng-model="paymentPlan.billing_frequency" required type="text">
+  <br>
+  <button ng-click="save()" ng-disabled="paymentPlanForm.$invalid">Save</button>
+  <span></span>
+  <button ng-click="delete()">Delete</button>
+  <span></span>
+  <button ui-sref="paymentPlans">Close</button>
+</form>

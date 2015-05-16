@@ -1,0 +1,14 @@
+<h2></h2>
+<form ng-init="exercisePlanForm = {}" novalidate role="form">
+  <label for="exercisePlanName">Name</label>
+  <input autofocus id="exercisePlanName" ng-maxlength="50" ng-model="exercisePlan.name" required type="text">
+  <br>
+  <label for="exercisePlanDescription">Description</label>
+  <input id="exercisePlanDescription" ng-model="exercisePlan.description" type="text">
+  <br>
+  <button ng-click="save()" ng-disabled="exercisePlanForm.$invalid">Save</button>
+  <span></span>
+  <button ng-click="delete()">Delete</button>
+  <span></span>
+  <button ui-sref="exercisePlans">Close</button>
+</form>

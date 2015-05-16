@@ -1,0 +1,9 @@
+module.config(['$stateProvider',
+  function($stateProvider) {
+    $stateProvider
+      .state('registration', {
+        url: '/registration/:role',
+        templateUrl: '<%= asset_path("registrations/registration.html") %>',
+        controller: 'RegistrationCtrl'
+      });
+}]);

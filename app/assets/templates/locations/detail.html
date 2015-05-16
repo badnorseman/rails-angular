@@ -1,0 +1,29 @@
+<form ng-init="locationForm = {}" novalidate role="form">
+  <label for="locationCompany">Company</label>
+  <input id="locationCompany" ng-model="location.company" type="text">
+  <br>
+  <label for="locationAddressLine1">Street Address</label>
+  <input id="locationAddressLine1" ng-model="location.address_line1" type="text">
+  <br>
+  <label for="locationAddressLine2"></label>
+  <input id="locationAddressLine2" ng-model="location.address_line2" type="text">
+  <br>
+  <label for="locationCity">City</label>
+  <input id="locationCity" ng-model="location.city" type="text">
+  <br>
+  <label for="locationStateOrProvince">State or Province</label>
+  <input id="locationStateOrProvince" ng-model="location.state_province" type="text">
+  <br>
+  <label for="locationPostalCode">Postal Code</label>
+  <input id="locationPostalCode" ng-model="location.postal_code" type="text">
+  <br>
+  <label for="locationCountry">Country</label>
+  <input id="locationCountry" ng-model="location.country" type="text">
+  <br>
+  <label for="locationPhoneNumber">Phone Number</label>
+  <input id="locationPhoneNumber" ng-model="location.phone_number" type="text">
+  <br>
+  <button ng-click="save()" ng-disabled="locationForm.$invalid">Save</button>
+  <span></span>
+  <button ui-sref="dashboard">Close</button>
+</form>

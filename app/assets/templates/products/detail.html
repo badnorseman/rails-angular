@@ -1,0 +1,14 @@
+<h2></h2>
+<form ng-init="productsForm = {}" novalidate role="form">
+  <label for="productsName">Name</label>
+  <input autofocus id="productsName" ng-maxlength="50" ng-model="products.name" required type="text">
+  <br>
+  <label for="productsDescription">Description</label>
+  <input id="productsDescription" ng-model="products.description" required type="text">
+  <br>
+  <button ng-click="save()" ng-disabled="productsForm.$invalid">Save</button>
+  <span></span>
+  <button ng-click="delete()">Delete</button>
+  <span></span>
+  <button ui-sref="productss">Close</button>
+</form>

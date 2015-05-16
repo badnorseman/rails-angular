@@ -1,0 +1,27 @@
+module.config(['$stateProvider',
+  function($stateProvider) {
+    $stateProvider
+      .state('profiles', {
+        url: '/profiles',
+        abstract: true,
+        templateUrl: '<%= asset_path("profiles/profile.html") %>',
+        controller: 'ProfileReadCtrl'
+      })
+      .state('profiles.detail', {
+        url: '',
+        views: {
+          'passwordChange': {
+            templateUrl: '<%= asset_path("profiles/password_change.html") %>',
+            controller: 'PasswordUpdateCtrl'
+          },
+          'userDetail': {
+            templateUrl: '<%= asset_path("users/detail.html") %>',
+            controller: 'UserDetailCtrl'
+          },
+          'locationDetail': {
+            templateUrl: '<%= asset_path("locations/detail.html") %>',
+            controller: 'LocationDetailCtrl'
+          }
+        }
+      });
+}]);

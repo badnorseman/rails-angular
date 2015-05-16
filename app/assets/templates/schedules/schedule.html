@@ -1,0 +1,22 @@
+<div id="schedule">
+  <ul>
+    <li class="control' ng-click="moveSchedule('left')"><</li>
+  </ul>
+  <div class="schedule-days">
+    <div class="schedule-days-wrapper"
+         ng-init="scheduleDaysOffset = 0"
+         style="left: -{{scheduleDaysOffset*84}}px">
+      <ul ng-repeat="(day, timeslots) in scheduleData">
+        <li class="schedule-date">{{ day | date: "EEE MM-dd-yy"}}</li>
+        <li ng-class=" { "available": slot.available } "
+            ng-click="slot.available ? bookTime(start_at, slot.duration) : ''"
+            ng-repeat="(start_at, slot) in timeslots">
+          {{ slot.time }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <ul>
+    <li class="control" ng-click="moveSchedule('right')">></li>
+  </ul>
+</div>

@@ -1,0 +1,14 @@
+<h2></h2>
+<form ng-init="exerciseForm = {}" novalidate role="form">
+  <label for="exerciseRepetition">Repetition</label>
+  <input autofocus id="exerciseRepetition" ng-model="exercise.repetition" required type="integer">
+  <br>
+  <label for="exerciseTempo">Tempo</label>
+  <input autofocus id="exerciseTempo" ng-model="exercise.tempo" required type="integer">
+  <br>
+  <button ng-click="save()" ng-disabled="exerciseForm.$invalid">Save</button>
+  <span></span>
+  <button ng-click="delete()">Delete</button>
+  <span></span>
+  <button ui-sref="exercisePlans">Close</button>
+</form>

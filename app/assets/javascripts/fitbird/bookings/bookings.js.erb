@@ -1,0 +1,9 @@
+module.config(['$stateProvider',
+  function($stateProvider) {
+    $stateProvider
+      .state('bookings', {
+        url: 'bookings',
+        templateUrl: '<%= asset_path("bookings/list.html") %>',
+        controller: 'BookingListCtrl'
+      })
+}]);

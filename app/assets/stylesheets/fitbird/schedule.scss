@@ -1,0 +1,41 @@
+#schedule {
+  ul {
+    float: left;
+    padding: 0 2px 0;
+  }
+  li {
+    list-style-type: none;
+    display: block;
+    height: 36px;
+    width: 80px;
+    background: gray;
+    color: #fff;
+    text-align: center;
+    &.available {
+      cursor: pointer;
+      background: #22b573;
+      &:hover {
+        background: #27a16f;
+      }
+    }
+  }
+  .schedule-days {
+    overflow: hidden;
+    position: relative;
+    width: 252px;
+    height: 468px;
+    float: left;
+  }
+  .schedule-days-wrapper {
+    position: absolute;
+    display: inline-block;
+    height: 468px;
+    transition: all 1s ease;
+  }
+  .control {
+    cursor: pointer;
+    &:hover {
+      background: #a8a8a8;
+    }
+  }
+}

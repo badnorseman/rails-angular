@@ -1,0 +1,24 @@
+module.directive('schedule', function() {
+  return {
+    replace: true,
+    restrict: 'E',
+    transclude: true,
+    scope: {
+      signedIn: '=signedIn'
+    },
+    templateUrl: '<%= asset_path("schedules/schedule.html") %>',
+    controller: 'ScheduleCtrl',
+    link: function($scope, element, attrs) {
+      $scope.moveSchedule = function(direction){
+        if(direction == 'right'){
+          if (Object.keys($scope.scheduleData).length >= $scope.scheduleDaysOffset*3){
+            $scope.scheduleDaysOffset++;
+          }
+        }
+        else if($scope.scheduleDaysOffset > 1){ 
+          $scope.scheduleDaysOffset--;
+        }
+      }
+    }
+  };
+});
