@@ -70,6 +70,7 @@ source 'http://rails-assets.org' do
   gem 'rails-assets-angular-bootstrap'
   gem 'rails-assets-angular-cookie'
   gem 'rails-assets-angular-messages'
+  gem 'rails-assets-angular-material'
   gem 'rails-assets-angular-resource'
   gem 'rails-assets-angular-ui-router'
   gem 'rails-assets-angular-ui-utils'

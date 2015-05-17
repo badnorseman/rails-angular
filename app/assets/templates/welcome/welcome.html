@@ -1,13 +1,17 @@
-<div>
-  <div class="menubar">
-    <a href="javascript:void(0)" ui-sref="registration( { role:'user' } )" ng-show="!signedIn"><span>
+<div layout="row" hide-sm class="menubar">
+  <div flex>
+    <a href="javascript:void(0)" ui-sref="registration( { role:'user' } )" ng-show="!signedIn">
       Sign Up
-    </span></a>
-    <a href="javascript:void(0)" ui-sref="login" ng-show="!signedIn"><span>
+    </a>
+  </div>
+  <div>
+    <a href="javascript:void(0)" ui-sref="login" ng-show="!signedIn">
       Log In
-    </span></a>
-    <a href="javascript:void(0)" ui-sref="registration( { role:'coach' } )" ng-show="!signedIn"><span>
+    </a>
+  </div>
+  <div>
+    <a href="javascript:void(0)" ui-sref="registration( { role:'coach' } )" ng-show="!signedIn">
       List As Trainer
-    </span></a>
+    </a>
   </div>
 </div>

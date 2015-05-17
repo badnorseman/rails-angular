@@ -1,0 +1,15 @@
+.menubar {
+  margin:20px auto;
+  float:right;
+}
+
+.menubar a {
+  background-color:$white;
+  border:none;
+  color:$grey;
+  margin-right:20px;
+}
+
+.menubar a:hover {
+  text-decoration:none;
+}

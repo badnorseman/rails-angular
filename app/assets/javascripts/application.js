@@ -11,9 +11,12 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require angular
+//= require angular-animate
+//= require angular-aria
 //= require angular-cookie
 //= require angular-bootstrap
 //= require angular-messages
+//= require angular-material
 //= require angular-resource
 //= require angular-ui-router
 //= require angular-ui-utils
