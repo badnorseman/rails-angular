@@ -1,5 +1,5 @@
-<div class="row">
-  <div class="col-xs-12 col-lg-3">
+<div layout="row" layout-sm="column">
+  <div flex-gt-sm="33">
     <h2>Exercises</h2>
     <br>
     <div ng-repeat="exercise in exercises">
@@ -10,7 +10,7 @@
     <span></span>
     <button ui-sref="dashboard">Close</button>
   </div>
-  <div class="col-xs-12 col-lg-9">
+  <div flex-gt-sm="66">
     <div ui-view></div>
   </div>
 </div>
