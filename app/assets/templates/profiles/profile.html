@@ -1,25 +1,11 @@
 <div layout="column">
-  <accordion>
-    <accordion-group is-open="userDetail.isOpen">
-      <accordion-heading>
-        <i ng-class="{'fa fa-chevron-down': userDetail.isOpen, 'fa fa-chevron-right': !userDetail.isOpen}"></i>
-        Person
-      </accordion-heading>
-      <div ui-view="userDetail"></div>
-    </accordion-group>
-    <accordion-group is-open="passwordChange.isOpen">
-      <accordion-heading>
-        <i ng-class="{'fa fa-chevron-down': passwordChange.isOpen, 'fa fa-chevron-right': !passwordChange.isOpen}"></i>
-        Password Change
-      </accordion-heading>
-      <div ui-view="passwordChange"></div>
-    </accordion-group>
-    <accordion-group is-open="locationDetail.isOpen">
-      <accordion-heading>
-        <i ng-class="{'fa fa-chevron-down': locationDetail.isOpen, 'fa fa-chevron-right': !locationDetail.isOpen}"></i>
-        Address
-      </accordion-heading>
-      <div ui-view="locationDetail"></div>
-    </accordion-group>
-  </accordion>
+  <div layout="row">
+    <div ui-view="userDetail"></div>
+  </div>
+  <div layout="row">
+    <div ui-view="passwordChange"></div>
+  </div>
+  <div layout="row">
+    <div ui-view="locationDetail"></div>
+  </div>
 </div>

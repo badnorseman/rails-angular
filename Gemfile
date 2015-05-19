@@ -8,8 +8,6 @@ gem 'jquery-rails'
 gem 'coffee-rails'
 # Use Sass for stylesheets
 gem 'sass-rails'
-# Use Twitter Bootstrap for stylesheets
-gem 'bootstrap-sass'
 # Use Font Awesome for icons
 gem 'font-awesome-sass'
 # Use PostgreSQL as database
