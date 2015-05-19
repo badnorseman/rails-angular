@@ -74,6 +74,7 @@ source 'http://rails-assets.org' do
   gem 'rails-assets-angular-resource'
   gem 'rails-assets-angular-ui-router'
   gem 'rails-assets-angular-ui-utils'
+  gem 'rails-assets-react'
   gem 'rails-assets-ng-token-auth'
 end
 

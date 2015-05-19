@@ -24,6 +24,8 @@ class UserPolicy < ApplicationPolicy
     def resolve
       if user.administrator?
         scope.all
+      elsif user.present?
+        scope.where(user_id: user.id)
       else
         raise Pundit::NotAuthorizedError, "You are not authenticated."
       end
