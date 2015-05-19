@@ -7,9 +7,6 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore Gemfile.lock.
-Gemfile.lock
-
 # Ignore images.
 app/assets/images
 
@@ -19,9 +16,6 @@ app/assets/images
 # Ignore log files.
 *.log
 /log
-
-# Ignore pdf files.
-*.pdf
 
 # Ignore temporary files.
 /tmp
