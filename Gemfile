@@ -10,6 +10,8 @@ gem 'coffee-rails'
 gem 'sass-rails'
 # Use Font Awesome for icons
 gem 'font-awesome-sass'
+# Enable Heroku platform features
+gem 'rails_12factor'
 # Use PostgreSQL as database
 gem 'pg'
 # Encapsulate the JSON serialization of objects. Read more: https://github.com/rails-api/active_model_serializers
@@ -65,7 +67,6 @@ end
 # Fetch Bower components
 source 'http://rails-assets.org' do
   gem 'rails-assets-angular'
-  gem 'rails-assets-angular-bootstrap'
   gem 'rails-assets-angular-cookie'
   gem 'rails-assets-angular-messages'
   gem 'rails-assets-angular-material'
