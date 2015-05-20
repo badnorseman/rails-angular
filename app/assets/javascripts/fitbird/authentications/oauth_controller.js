@@ -6,5 +6,6 @@ module.controller('OAuthCtrl', ['$auth', '$scope', '$state', '$stateParams',
       })
       .catch(function(error) {
         $scope.error = error.errors[0];
+        $state.go('welcome');
       });
 }]);

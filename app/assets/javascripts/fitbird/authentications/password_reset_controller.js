@@ -7,6 +7,7 @@ module.controller('PasswordResetCtrl', ['$auth', '$scope', '$state',
         })
         .catch(function(error) {
           $scope.error = error.errors[0];
+          $state.go('welcome');
         });
     };
 }]);
