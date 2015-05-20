@@ -6,7 +6,6 @@
 //= require fitbird/exercise_descriptions
 //= require fitbird/exercise_plans
 //= require fitbird/habits
-//= require fitbird/menus
 //= require fitbird/profiles
 //= require fitbird/payment_plans
 //= require fitbird/products

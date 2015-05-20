@@ -3,7 +3,7 @@ module.config(['$stateProvider',
     $stateProvider
       .state('welcome', {
         url: '/',
-        templateUrl: '<%= asset_path("welcome/welcome.html") %>',
+        template: '', // This controller has no template
         controller: 'WelcomeCtrl'
       });
 }]);
