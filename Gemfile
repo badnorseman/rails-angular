@@ -1,100 +1,86 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails'
+# Ruby version
+ruby "2.1.3"
+# Bundle edge Rails instead: gem "rails", github: "rails/rails"
+gem "rails"
 # Add jquery to the JavaScript library
-gem 'jquery-rails'
+gem "jquery-rails"
 # Add coffee-script to the JavaScript library
-gem 'coffee-rails'
+gem "coffee-rails"
 # Use Sass for stylesheets
-gem 'sass-rails'
+gem "sass-rails"
 # Use Font Awesome for icons
-gem 'font-awesome-sass'
+gem "font-awesome-sass"
 # Use PostgreSQL as database
-gem 'pg'
+gem "pg"
 # Encapsulate the JSON serialization of objects. Read more: https://github.com/rails-api/active_model_serializers
-gem 'active_model_serializers'
+gem "active_model_serializers"
 # Memcached store cashe on server
-gem 'dalli'
+gem "dalli"
 # Authorize the user sign up and the user log in
-gem 'devise', '3.4'
-gem 'devise_token_auth'
+gem "devise", "3.4"
+gem "devise_token_auth"
 # Authenticate user with Facebook
-gem 'omniauth-facebook'
+gem "omniauth-facebook"
 # Authorize what ressources a given user is allowed to access within your application
-gem 'pundit'
+gem "pundit"
 # Track user activity. Read more: https://mixpanel.com/help/reference/ruby
-gem 'mixpanel-ruby'
+gem "mixpanel-ruby"
 # Enable payment options
-gem 'braintree'
+gem "braintree"
 # Use Unitwise for unit measurement conversion
-gem 'unitwise'
+gem "unitwise"
 # Monitor Ruby Gems are out-of-date or vulnerable
-gem 'gemsurance'
+gem "gemsurance"
+# Enable Heroku features
+gem "rails_12factor"
 
 group :doc do
   # Bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', '~> 0.4.0'
+  gem "sdoc", "~> 0.4.0"
 end
 
 group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem "spring"
   # Handle error requests for debugging
-  gem 'meta_request'
+  gem "meta_request"
   # Monitor application performance
-  gem 'bullet'
+  gem "bullet"
   # Display json objects pretty
-  gem 'awesome_print'
+  gem "awesome_print"
   # Write test scripts. Read more: http://github.com/rspec/rspec
-  gem 'factory_girl_rails'
-  gem 'rspec-rails'
+  gem "factory_girl_rails"
+  gem "rspec-rails"
   # Debug source code
-  gem 'byebug'
-  gem 'pry-rails'
-  gem 'quiet_assets'
+  gem "byebug"
+  gem "pry-rails"
+  gem "quiet_assets"
 end
 
 group :production do
   # Use Puma as production web server
-  gem 'puma'
+  gem "puma"
   # Use Uglifier as compressor for JavaScript assets
-  gem 'uglifier', '>= 1.3.0'
+  gem "uglifier", ">= 1.3.0"
 end
 
 # Fetch Bower components
-source 'http://rails-assets.org' do
-  gem 'rails-assets-angular'
-  gem 'rails-assets-angular-cookie'
-  gem 'rails-assets-angular-messages'
-  gem 'rails-assets-angular-material'
-  gem 'rails-assets-angular-resource'
-  gem 'rails-assets-angular-ui-router'
-  gem 'rails-assets-angular-ui-utils'
-  gem 'rails-assets-react'
-  gem 'rails-assets-ng-token-auth'
+source "http://rails-assets.org" do
+  gem "rails-assets-angular"
+  gem "rails-assets-angular-cookie"
+  gem "rails-assets-angular-messages"
+  gem "rails-assets-angular-material"
+  gem "rails-assets-angular-resource"
+  gem "rails-assets-angular-ui-router"
+  gem "rails-assets-angular-ui-utils"
+  gem "rails-assets-react"
+  gem "rails-assets-ng-token-auth"
 end
 
-# Required for Heroku
-# Ruby version
-ruby '2.1.3'
-# Enable platform features
-gem 'rails_12factor'
-
 # Required for any Windows computer
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :ruby_19]
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+# gem "tzinfo-data", platforms: [:mingw, :mswin, :ruby_19]
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+# gem "bcrypt", "~> 3.1.7"
