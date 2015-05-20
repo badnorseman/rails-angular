@@ -4,13 +4,15 @@ source "https://rubygems.org"
 ruby "2.1.3"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails"
-# Add jquery to the JavaScript library
+# Add React to the JavaScript library
+gem "react-rails"
+# Add JQuery to the JavaScript library
 gem "jquery-rails"
-# Add coffee-script to the JavaScript library
+# Add CoffeeScript to the JavaScript library
 gem "coffee-rails"
 # Use Sass for stylesheets
 gem "sass-rails"
-# Use Font Awesome for icons
+# Use FontAwesome for icons
 gem "font-awesome-sass"
 # Use PostgreSQL as database
 gem "pg"
@@ -60,7 +62,7 @@ group :development, :test do
 end
 
 group :production do
-  # Use Puma as production web server
+  # Use Puma as web server
   gem "puma"
   # Use Uglifier as compressor for JavaScript assets
   gem "uglifier", ">= 1.3.0"
@@ -75,7 +77,6 @@ source "http://rails-assets.org" do
   gem "rails-assets-angular-resource"
   gem "rails-assets-angular-ui-router"
   gem "rails-assets-angular-ui-utils"
-  gem "rails-assets-react"
   gem "rails-assets-ng-token-auth"
 end
 
