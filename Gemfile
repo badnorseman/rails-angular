@@ -10,8 +10,6 @@ gem 'coffee-rails'
 gem 'sass-rails'
 # Use Font Awesome for icons
 gem 'font-awesome-sass'
-# Enable Heroku platform features
-gem 'rails_12factor'
 # Use PostgreSQL as database
 gem 'pg'
 # Encapsulate the JSON serialization of objects. Read more: https://github.com/rails-api/active_model_serializers
@@ -58,8 +56,8 @@ group :development, :test do
 end
 
 group :production do
-  # Use Thin as production web server
-  gem 'thin'
+  # Use Puma as production web server
+  gem 'puma'
   # Use Uglifier as compressor for JavaScript assets
   gem 'uglifier', '>= 1.3.0'
 end
@@ -76,6 +74,12 @@ source 'http://rails-assets.org' do
   gem 'rails-assets-react'
   gem 'rails-assets-ng-token-auth'
 end
+
+# Required for Heroku
+# Ruby version
+ruby '2.1.3'
+# Enable platform features
+gem 'rails_12factor'
 
 # Required for any Windows computer
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :ruby_19]
