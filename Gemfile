@@ -81,5 +81,6 @@ end
 
 # Required for any Windows computer
 # gem "tzinfo-data", platforms: [:mingw, :mswin, :ruby_19]
+
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
