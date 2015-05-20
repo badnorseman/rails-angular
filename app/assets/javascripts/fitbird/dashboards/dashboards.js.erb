@@ -3,7 +3,7 @@ module.config(['$stateProvider',
     $stateProvider
       .state('dashboard', {
         url: '/dashboard',
-        templateUrl: '<%= asset_path("dashboards/dashboard.html") %>',
+        template: '', // This controller has no template
         controller: 'DashboardCtrl'
       })
 }]);

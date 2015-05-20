@@ -1,4 +1,7 @@
-<div>
-  <%= react_component("MenuList") %>
+<div ng-show="!user.id">
+  <%= react_component("Welcome") %>
+</div>
+<div ng-show="user.id">
+  <%= react_component("Dashboard") %>
 </div>
 <div ui-view>
