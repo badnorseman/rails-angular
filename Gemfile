@@ -78,6 +78,7 @@ source "http://rails-assets.org" do
   gem "rails-assets-angular-ui-router"
   gem "rails-assets-angular-ui-utils"
   gem "rails-assets-ng-token-auth"
+  gem "rails-assets-material-ui"
 end
 
 # Required for any Windows computer

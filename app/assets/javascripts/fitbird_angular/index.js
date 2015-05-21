@@ -1,0 +1,15 @@
+//= require fitbird_angular/fitbird
+//= require fitbird_angular/authentications
+//= require fitbird_angular/bookings
+//= require fitbird_angular/coaches
+//= require fitbird_angular/dashboards
+//= require fitbird_angular/exercise_descriptions
+//= require fitbird_angular/exercise_plans
+//= require fitbird_angular/habits
+//= require fitbird_angular/profiles
+//= require fitbird_angular/payment_plans
+//= require fitbird_angular/products
+//= require fitbird_angular/registrations
+//= require fitbird_angular/schedules
+//= require fitbird_angular/users
+//= require fitbird_angular/welcome
