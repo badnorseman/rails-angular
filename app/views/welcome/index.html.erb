@@ -1,7 +1,7 @@
-<div ng-show="!user.id">
+<section ng-show="!user.id">
   <%= react_component("Welcome") %>
-</div>
-<div ng-show="user.id">
+</section>
+<section ng-show="user.id">
   <%= react_component("Dashboard") %>
-</div>
-<div ui-view>
+</section>
+<section ui-view>

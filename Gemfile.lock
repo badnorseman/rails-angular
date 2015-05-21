@@ -187,6 +187,7 @@ GEM
       rails-assets-angular (>= 1.0.8)
     rails-assets-angular-ui-utils (0.2.3)
       rails-assets-angular (>= 1.0.2)
+    rails-assets-material-ui (0.7.5)
     rails-assets-ng-token-auth (0.0.25)
       rails-assets-angular (>= 1.2.0)
       rails-assets-angular-cookie (>= 4.0.6)
@@ -306,6 +307,7 @@ DEPENDENCIES
   rails-assets-angular-resource!
   rails-assets-angular-ui-router!
   rails-assets-angular-ui-utils!
+  rails-assets-material-ui!
   rails-assets-ng-token-auth!
   rails_12factor
   react-rails

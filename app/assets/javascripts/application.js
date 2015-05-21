@@ -19,7 +19,7 @@
 //= require angular-ui-router
 //= require angular-ui-utils
 //= require ng-token-auth
-//= require fitbird
+//= require fitbird_angular
 //= require react
 //= require react_ujs
-//= require components
+//= require fitbird_react
