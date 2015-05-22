@@ -45,8 +45,6 @@ GEM
     blankslate (2.1.2.4)
     braintree (2.43.0)
       builder (>= 2.0.0)
-    browserify-rails (0.9.0)
-      sprockets (~> 2.2)
     builder (3.2.2)
     bullet (4.14.7)
       activesupport (>= 3.0.0)
@@ -63,7 +61,6 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     columnize (0.9.0)
-    commonjs (0.2.7)
     connection_pool (2.2.0)
     dalli (2.7.4)
     devise (3.4.0)
@@ -97,7 +94,6 @@ GEM
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     hashie (3.4.1)
-    hike (1.2.3)
     i18n (0.7.0)
     jquery-rails (4.0.3)
       rails-dom-testing (~> 1.0)
@@ -105,22 +101,11 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.2)
     jwt (1.5.0)
-    less (2.6.0)
-      commonjs (~> 0.2.7)
-    less-rails (2.7.0)
-      actionpack (>= 4.0)
-      less (~> 2.6.0)
-      sprockets (> 2, < 4)
-      tilt
     liner (0.2.4)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    material-ui (0.7.3.2)
-      less-rails
-      railties (~> 4.0)
-      react-source (~> 0.13)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     meta_request (0.3.4)
@@ -265,11 +250,8 @@ GEM
     signed_multiset (0.2.1)
     slop (3.6.0)
     spring (1.3.6)
-    sprockets (2.12.3)
-      hike (~> 1.2)
-      multi_json (~> 1.0)
+    sprockets (3.1.0)
       rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
     sprockets-rails (2.3.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
@@ -298,7 +280,6 @@ DEPENDENCIES
   active_model_serializers
   awesome_print
   braintree
-  browserify-rails
   bullet
   byebug
   coffee-rails
@@ -309,7 +290,6 @@ DEPENDENCIES
   font-awesome-sass
   gemsurance
   jquery-rails
-  material-ui
   meta_request
   mixpanel-ruby
   omniauth-facebook
