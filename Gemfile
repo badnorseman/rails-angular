@@ -33,10 +33,6 @@ gem "braintree"
 gem "unitwise"
 # Monitor Ruby Gems are out-of-date or vulnerable
 gem "gemsurance"
-# Add CommonJS module support
-gem "browserify-rails"
-# Use Material Design with React
-gem "material-ui"
 
 group :doc do
   # Bundle exec rake doc:rails generates the API under doc/api.
