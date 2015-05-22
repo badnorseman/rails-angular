@@ -1,11 +1,11 @@
 {
   "name": "fitbird",
-  "devDependencies": {
-    "browserify":"10.2.1",
-    "browserify-incremental":"3.0.0",
-    "reactify":"1.1.1"
+  "dependencies": {
+    "browserify": "^10.2.1",
+    "browserify-incremental": "3.0.0",
+    "reactify": "1.1.1"
   },
   "engines": {
-      "node":">= 0.10"
+    "node": ">= 0.10"
   }
 }
