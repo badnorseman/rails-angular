@@ -1,8 +1,8 @@
 {
   "name": "fitbird",
   "dependencies": {
+    "es6-loader": "^0.2.0",
     "node-libs-browser": "^0.5.2",
-    "reactify": "1.1.1",
     "webpack": "^1.9.8"
   },
   "engines": {
