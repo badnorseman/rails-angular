@@ -20,5 +20,5 @@ app/assets/images
 # Ignore temporary files.
 /tmp
 
-# Ignore vendor files.
-/vendor
+# Ignore node modules.
+/node_modules

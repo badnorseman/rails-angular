@@ -3,21 +3,9 @@ var Welcome = React.createClass({
   render: function() {
     return (
       <div layout="row" hide-sm>
-        <div flex>
-          <a href="#/registration/user">
-            Sign Up
-          </a>
-        </div>
-        <div>
-          <a href="#/login">
-            Log In
-          </a>
-        </div>
-        <div>
-          <a href="#/registration/coach">
-            List As Trainer
-          </a>
-        </div>
+        <MenuItem link="#/registration/user" label="Sign Up" />&nbsp;
+        <MenuItem link="#/login" label="Log In" />&nbsp;
+        <MenuItem link="#/registration/coach" label="List As Trainer" />
       </div>
     );
   }

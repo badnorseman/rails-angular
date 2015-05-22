@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-# Ruby version
-ruby "2.1.3"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails"
 # Add React to the JavaScript library
@@ -35,8 +33,10 @@ gem "braintree"
 gem "unitwise"
 # Monitor Ruby Gems are out-of-date or vulnerable
 gem "gemsurance"
-# Enable Heroku features
-gem "rails_12factor"
+# Add CommonJS module support
+gem "browserify-rails"
+# Use Material Design with React
+gem "material-ui"
 
 group :doc do
   # Bundle exec rake doc:rails generates the API under doc/api.
@@ -66,6 +66,8 @@ group :production do
   gem "puma"
   # Use Uglifier as compressor for JavaScript assets
   gem "uglifier", ">= 1.3.0"
+  # Enable Heroku features
+  gem "rails_12factor"
 end
 
 # Fetch Bower components
@@ -78,7 +80,6 @@ source "http://rails-assets.org" do
   gem "rails-assets-angular-ui-router"
   gem "rails-assets-angular-ui-utils"
   gem "rails-assets-ng-token-auth"
-  gem "rails-assets-material-ui"
 end
 
 # Required for any Windows computer

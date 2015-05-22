@@ -4,16 +4,8 @@ var Dashboard = React.createClass({
     return (
       <div layout="row" layout-align-gt-sm="end start"
            layout-sm="column" layout-align-sm="start start">
-        <div>
-          <a href="#/profiles"><span>
-            Profile
-          </span></a>
-        </div>
-        <div>
-          <a href="#/logout"><span>
-            Log Out
-          </span></a>
-        </div>
+        <MenuItem link="#/profiles" label="Profile" />&nbsp;
+        <MenuItem link="#/logout" label="Log Out" />&nbsp;
       </div>
     );
   }
