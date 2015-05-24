@@ -22,5 +22,5 @@
 //= require react
 //= require react_ujs
 //= require _angular
-//= require _react
-//= require main.bundle
+//= require _web
+//= require _app.bundle
