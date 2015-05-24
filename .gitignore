@@ -7,18 +7,17 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore build files.
+app/assets/javascripts/main.bundle.js
+
 # Ignore images.
 app/assets/images
 
-# Ignore lib files.
+# Ignore third-party packages.
 /lib
-
-# Ignore log files.
-*.log
-/log
+/node_modules
 
 # Ignore temporary files.
 /tmp
-
-# Ignore node modules.
-/node_modules
+*.log
+/log

@@ -23,3 +23,4 @@
 //= require react_ujs
 //= require fitbird_angular
 //= require fitbird_react
+//= require main.bundle
