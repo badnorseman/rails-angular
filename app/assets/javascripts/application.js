@@ -21,5 +21,6 @@
 //= require ng-token-auth
 //= require react
 //= require react_ujs
-//= require fitbird_angular
-//= require fitbird_react
+//= require _angular
+//= require _web
+//= require _app.bundle

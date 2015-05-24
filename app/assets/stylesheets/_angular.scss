@@ -1,11 +1,11 @@
-@import "fitbird/colors";
-@import "fitbird/booking_page";
-@import "fitbird/fonts";
-@import "fitbird/icons";
-@import "fitbird/login_page";
-@import "fitbird/password_reset_page";
-@import "fitbird/schedule";
-@import "fitbird/signup_page";
+@import "_angular/colors";
+@import "_angular/booking_page";
+@import "_angular/fonts";
+@import "_angular/icons";
+@import "_angular/login_page";
+@import "_angular/password_reset_page";
+@import "_angular/schedule";
+@import "_angular/signup_page";
 
 html, body {min-height:100%;}
 
