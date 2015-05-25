@@ -1,13 +1,15 @@
 import $ from "jquery";
 import React from "react";
-import HelloWorld from "./hello_world";
+import Welcome from "./welcome";
+import Navigation from "./navigation";
 
 $(function onLoad() {
   function render() {
     if ($("#_app").length > 0) {
       React.render(
         <div>
-          <HelloWorld />
+          <Welcome />
+          <Navigation />
         </div>, document.getElementById("_app")
       );
     }

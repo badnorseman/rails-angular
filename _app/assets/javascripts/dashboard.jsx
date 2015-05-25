@@ -1,14 +1,14 @@
 import React from "react";
 
-var Dashboard = React.createClass({
-
-  render: function() {
-    return (
+class Dashboard extends React.Component {
+  render() {
+    return(
       <div layout="row" layout-align-gt-sm="end start"
            layout-sm="column" layout-align-sm="start start">
-        <MenuItem link="#/profiles" label="Profile" />&nbsp;
-        <MenuItem link="#/logout" label="Log Out" />&nbsp;
+         <p>Dashboard</p>
       </div>
     );
   }
-});
+};
+
+export default Dashboard;

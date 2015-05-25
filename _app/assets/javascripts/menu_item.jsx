@@ -1,12 +1,13 @@
 import React from "react";
 
-var MenuItem = React.createClass({
-
-  render: function() {
-    return (
+class MenuItem extends React.Component {
+  render() {
+    return(
       <a href={this.props.link}>
         {this.props.label}
       </a>
     );
   }
-});
+};
+
+export default MenuItem;
