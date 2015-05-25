@@ -5,12 +5,12 @@ import Navigation from "./navigation";
 
 $(function onLoad() {
   function render() {
-    if ($("#_app").length > 0) {
+    if ($("#app").length > 0) {
       React.render(
         <div>
           <Welcome />
           <Navigation />
-        </div>, document.getElementById("_app")
+        </div>, document.getElementById("app")
       );
     }
   }

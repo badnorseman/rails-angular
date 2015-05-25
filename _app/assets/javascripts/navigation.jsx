@@ -1,8 +1,8 @@
 import React from "react";
 import Router from "react-router";
 import { DefaultRoute, Link, Route, RouteHandler } from "react-router";
-import LoginHand from "./login";
-import SignupHand from "./signup";
+import Login from "./login";
+import Signup from "./signup";
 
 class Navigation extends React.Component {
   render() {
@@ -11,7 +11,6 @@ class Navigation extends React.Component {
         <Link to="login">Log In</Link>
         <Link to="signup">Sign Up</Link>
 
-        {/* don't remove this line. */}
         <RouteHandler/>
       </div>
     );
@@ -20,13 +19,13 @@ class Navigation extends React.Component {
 
 var routes = (
   <Route name="welcome" path="/" handler={Navigation}>
-    <Route name="login" path="/login" handler={LoginHand} />
-    <Route name="signup" path="/signup" handler={SignupHand} />
+    <Route name="login" path="/login" handler={Login} />
+    <Route name="signup" path="/signup" handler={Signup} />
   </Route>
 );
 
 Router.run(routes, function(Handler) {
-  React.render(<Handler/>, document.getElementById("_app"));
+  React.render(<Handler/>, document.getElementById("app"));
 });
 
 // export default Navigation;
