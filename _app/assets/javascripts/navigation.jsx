@@ -19,8 +19,8 @@ class Navigation extends React.Component {
 
 var routes = (
   <Route name="welcome" path="/" handler={Navigation}>
-    <Route name="login" path="/login" handler={Login} />
-    <Route name="signup" path="/signup" handler={Signup} />
+    <Route name="login" path="/login" handler={Login}/>
+    <Route name="signup" path="/signup" handler={Signup}/>
   </Route>
 );
 
