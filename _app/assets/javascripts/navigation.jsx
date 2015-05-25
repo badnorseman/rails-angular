@@ -28,3 +28,5 @@ var routes = (
 Router.run(routes, function(Handler) {
   React.render(<Handler/>, document.getElementById("_app"));
 });
+
+// export default Navigation;
