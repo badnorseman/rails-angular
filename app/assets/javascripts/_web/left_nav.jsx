@@ -89,7 +89,6 @@ class Fitbird_LeftNav extends React.Component {
           <mui.LeftNav ref="leftNav" docked={false} header={header} isInitiallyOpen={false} onChange={this.itemClicked} menuItems={this.state.menuItems} />
         </div>
       );
-
     }
 };
 
