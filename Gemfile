@@ -2,8 +2,6 @@ source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails"
-# Add React to the JavaScript library
-gem "react-rails"
 # Add JQuery to the JavaScript library
 gem "jquery-rails"
 # Add CoffeeScript to the JavaScript library

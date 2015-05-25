@@ -1,3 +1,5 @@
+import React from "react";
+
 var MenuItem = React.createClass({
 
   render: function() {

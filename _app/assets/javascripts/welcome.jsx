@@ -1,3 +1,6 @@
+import React from "react";
+import MenuItem from "./menu_item";
+
 var Welcome = React.createClass({
 
   render: function() {
