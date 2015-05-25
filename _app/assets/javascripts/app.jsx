@@ -8,8 +8,7 @@ $(function onLoad() {
       React.render(
         <div>
           <HelloWorld />
-        </div>,
-        document.getElementById("_app")
+        </div>, document.getElementById("_app")
       );
     }
   }
