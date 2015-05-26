@@ -1,6 +1,9 @@
 import $ from "jquery";
 import React from "react";
+import injectTapEventPlugin from "react-tap-event-plugin";
 import Navigation from "./components/navigation";
+
+injectTapEventPlugin();
 
 $(function onLoad() {
   function render() {

@@ -1,10 +1,13 @@
 import React from "react";
+import mui from "material-ui";
 
 class HelloWorld extends React.Component {
 
   render() {
     return(
-      <p>Hello World</p>
+      <div>
+        <mui.RaisedButton label="Hello World"/>
+      </div>
     );
   }
 }
