@@ -1,6 +1,7 @@
 import React from "react";
 
 class Dashboard extends React.Component {
+
   render() {
     return(
       <div layout="row" layout-align-gt-sm="end start"

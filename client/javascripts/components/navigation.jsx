@@ -7,6 +7,7 @@ import Dashboard from "./dashboard";
 var { DefaultRoute, Link, Route, RouteHandler } = Router;
 
 class Navigation extends React.Component {
+
   render() {
     return(
       <div>
