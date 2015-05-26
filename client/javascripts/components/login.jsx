@@ -3,7 +3,11 @@ import Auth from "./auth";
 
 class Login extends React.Component {
 
-  constructor (props) {
+  contextTypes: {
+    router: React.PropTypes.func
+  }
+
+  constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
@@ -11,7 +15,7 @@ class Login extends React.Component {
     };
   }
 
-  handleSubmit (event) {
+  handleSubmit(event) {
     event.preventDefault();
     var { router } = this.context;
     var nextPath = router.getCurrentQuery().nextPath;
@@ -29,7 +33,7 @@ class Login extends React.Component {
     });
   }
 
-  render () {
+  render() {
     return (
       <form onSubmit={this.handleSubmit}>
         <label><input ref="email" placeholder="Email" defaultValue="joe@example.com"/></label>
@@ -40,10 +44,6 @@ class Login extends React.Component {
     );
   }
 }
-
-Login.contextTypes = {
-  router: React.PropTypes.func
-};
 
 export default Login;
 
@@ -67,21 +67,21 @@ var auth = {
     });
   },
 
-  getToken: function () {
+  getToken: function() {
     return localStorage.token;
   },
 
-  logout: function (cb) {
+  logout: function(cb) {
     delete localStorage.token;
     if (cb) cb();
     this.onChange(false);
   },
 
-  loggedIn: function () {
+  loggedIn: function() {
     return !!localStorage.token;
   },
 
-  onChange: function () {}
+  onChange: function() {}
 };
 
 function pretendRequest(email, password, cb) {
