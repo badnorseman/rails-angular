@@ -20,4 +20,4 @@
 //= require angular-ui-utils
 //= require ng-token-auth
 //= require _angular
-//= require _app.bundle
+//= require client.bundle

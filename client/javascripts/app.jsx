@@ -1,7 +1,7 @@
 import $ from "jquery";
 import React from "react";
-import Welcome from "./welcome";
-import Navigation from "./navigation";
+import Welcome from "./components/welcome";
+import Navigation from "./components/navigation";
 
 $(function onLoad() {
   function render() {

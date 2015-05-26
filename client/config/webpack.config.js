@@ -2,11 +2,11 @@
 module.exports = {
 
   context: __dirname,
-  entry: "./assets/javascripts/app.jsx",
+  entry: "../javascripts/app.jsx",
 
   output: {
     path: "./app/assets/javascripts",
-    filename: "_app.bundle.js"
+    filename: "client.bundle.js"
   },
 
   externals: {
@@ -23,7 +23,7 @@ module.exports = {
   },
 
   resolve: {
-    root: __dirname + "/_app/assets/javascripts",
+    root: __dirname + "../javascripts",
     extensions: ["", ".webpack.js", ".web.js", ".js", ".jsx"]
   },
 
