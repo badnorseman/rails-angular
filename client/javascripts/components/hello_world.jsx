@@ -1,12 +1,24 @@
 import React from "react";
-import mui from "material-ui";
+import Mui from "material-ui";
+
+var Dialog = Mui.Dialog;
 
 class HelloWorld extends React.Component {
 
   render() {
+
+    var someActions = [
+      { text: 'Submit', ref: 'submit' }
+    ];
+
     return(
       <div>
-        <mui.RaisedButton label="Hello World"/>
+        <Dialog
+          title="Hello World"
+          actions={someActions}
+          actionFocus="submit"
+          modal={true}>
+        </Dialog>
       </div>
     );
   }
