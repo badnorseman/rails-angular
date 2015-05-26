@@ -19,8 +19,5 @@
 //= require angular-ui-router
 //= require angular-ui-utils
 //= require ng-token-auth
-//= require react
-//= require react_ujs
 //= require _angular
-//= require _web
-//= require _app.bundle
+//= require client.bundle
