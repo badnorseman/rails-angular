@@ -1,67 +1,64 @@
 import React from 'react';
 import mui from 'material-ui';
+import Router from "react-router";
 
 class Fitbird_LeftNav extends React.Component {
-    getInitialState() {
+  constructor(props) {
       var menuItems;
-      if (this.props.user) {
+      if (props.user) {
         menuItems = [
         {
-          type: mui.MenuItem.Types.LINK,
-          payload: 'log-off',
+          route: 'log-off',
           text: 'Log Off',
         }, {
-          type: mui.MenuItem.Types.LINK,
-          payload: 'discover',
+          route: 'discover',
           text: 'Discover'
         }, {
-          type: mui.MenuItem.Types.LINK,
-          payload: 'how-it-works',
+          route: 'how-it-works',
           text: 'How It Works'
         }, {
-          type: mui.MenuItem.Types.LINK,
-          payload: 'join-as-trainer',
+          route: 'join-as-trainer',
           text: 'Join As Trainer'
-        }];
+        }]
       } else {
         menuItems = [
         {
-          type: mui.MenuItem.Types.LINK,
-          payload: 'sign-up',
+          route: 'sign-up',
           text: 'Sign Up'
         }, {
-          type: mui.MenuItem.Types.LINK,
-          payload: 'log-in',
+          route: 'log-in',
           text: 'Log In',
         }, {
-          type: mui.MenuItem.Types.LINK,
-          payload: 'discover',
+          route: 'discover',
           text: 'Discover'
         }, {
-          type: mui.MenuItem.Types.LINK,
-          payload: 'how-it-works',
+          route: 'how-it-works',
           text: 'How It Works'
         }, {
-          type: mui.MenuItem.Types.LINK,
-          payload: 'join-as-trainer',
+          route: 'join-as-trainer',
           text: 'Join As Trainer'
         }];
-
-        return {menuItems};
       }
+
+      super();
+      this.state = {menuItems: menuItems}
+      this.toggle = this.toggle.bind(this);
+      this.onItemClicked = this.onItemClicked.bind(this);
+      this.onHeaderClick = this.onHeaderClick.bind(this);
+      this.toggle = this.toggle.bind(this);
     }
 
     toggle() {
       this.refs.leftNav.toggle();
     }
 
-    onitemClicked(e, key, payload) {
-      // TODO: route to payload. --Not called with type: LINK
+    onItemClicked(e, key, payload) {
+      this.context.router.transitionTo(payload.route);
       this.refs.leftNav.close();
     }
 
     onHeaderClick() {
-      // TODO: route to index/ root
+      this.context.router.transitionTo('root');
       this.refs.leftNav.close();
     }
 
@@ -80,16 +77,20 @@ class Fitbird_LeftNav extends React.Component {
     render() {
       var header = (
         <div className="color-palette"  onClick={this.onHeaderClick}>
-          <h1 style={this.headerStyles()} className="mui-font-style-headline indigo-500">Fitbird</h1>
+          <h1 style={this.headerStyles()} className="mui-font-style-headline indigo-500">Fitbird 2.0</h1>
         </div>
       );
 
       return (
         <div>
-          <mui.LeftNav ref="leftNav" docked={false} header={header} isInitiallyOpen={false} onChange={this.itemClicked} menuItems={this.state.menuItems} />
+          <mui.LeftNav ref="leftNav" docked={false} header={header} isInitiallyOpen={false} onChange={this.onItemClicked} menuItems={this.state.menuItems} />
         </div>
       );
     }
+};
+
+Fitbird_LeftNav.contextTypes = {
+  router: React.PropTypes.func
 };
 
 export default Fitbird_LeftNav;
