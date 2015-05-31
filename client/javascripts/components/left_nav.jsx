@@ -77,7 +77,7 @@ class Fitbird_LeftNav extends React.Component {
     render() {
       var header = (
         <div className="color-palette"  onClick={this.onHeaderClick}>
-          <h1 style={this.headerStyles()} className="mui-font-style-headline indigo-500">Fitbird 2.0</h1>
+          <h1 style={this.headerStyles()} className="mui-font-style-headline indigo-500">Fitbird</h1>
         </div>
       );
 
