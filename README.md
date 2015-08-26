@@ -1,1 +1,1 @@
-# Implementation of FitBird Marketplace using React-rails with web and api in same model. 
+# Implementation of FitBird Marketplace using React-rails with web-app and API in same model. 
