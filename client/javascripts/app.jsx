@@ -8,18 +8,12 @@ injectTapEventPlugin();
 $(function onLoad() {
   function render() {
     if ($("#app").length > 0) {
-
-      class App extends React.Component {
-
-        render() {
-          return(
-            <div>
-              <h1>App</h1>
-              <Navigation/>
-            </div>, document.getElementById("app")
-          );
-        }
-      };
+      React.render(
+        <div>
+          <h1>App</h1>
+          <Navigation/>
+        </div>, document.getElementById("app")
+      );
     }
   }
 
